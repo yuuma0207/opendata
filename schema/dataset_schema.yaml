@@ -1,0 +1,23 @@
+dataset:
+  name: sendai_population_by_ward_age
+  description: 仙台市 区別・男女別人口および世帯数データ
+  temporal:
+    calendar: gregorian
+    year_format: YYYY
+  fields:
+    - name: year
+      type: integer
+      description: 西暦年
+    - name: ward_code
+      type: string
+      description: 行政区コード
+    - name: age_class
+      type: string
+      description: 年齢階級
+    - name: sex
+      type: string
+      description: 男女区分
+      allowed_values: [male, female]
+    - name: population
+      type: integer
+      description: 人口
